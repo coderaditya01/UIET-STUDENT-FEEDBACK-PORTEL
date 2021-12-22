@@ -70,12 +70,12 @@ exports.registerHandle = (req, res) => {
 
                 const oauth2Client = new OAuth2(
                     "213207826462-2dpeqbdjt1sfqeb6dkii5fmsemsf5ahs.apps.googleusercontent.com", // ClientID
-                    "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", // Client Secret
+                    "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", // Client Secret
                     "https://developers.google.com/oauthplayground" // Redirect URL
                 );
 
                 oauth2Client.setCredentials({
-                    refresh_token: "1//04zPxZNLF0lgqCgYIARAAGAQSNwF-L9IrS-6DdtaoklQg0FQuLhcYLJjJ6bu8AKl09CizhGRe766OYxhsvDDFToPl0mV4CvWWAy0"
+                    refresh_token: "1//045KJdr5Kii7ICgYIARAAGAQSNwF-L9IriVLCDOvNH5qtEc9S5ViXREzGVtrC9zrTLJW9qBnyGX-AJnw0ty9NiUIvuU_2rJ7yqo8"
                 });
                 const accessToken = oauth2Client.getAccessToken()
 
@@ -94,8 +94,8 @@ exports.registerHandle = (req, res) => {
                         type: "OAuth2",
                         user: "atul.etoos111@gmail.com",
                         clientId: "213207826462-2dpeqbdjt1sfqeb6dkii5fmsemsf5ahs.apps.googleusercontent.com",
-                        clientSecret: "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",
-                        refreshToken: "1//04zPxZNLF0lgqCgYIARAAGAQSNwF-L9IrS-6DdtaoklQg0FQuLhcYLJjJ6bu8AKl09CizhGRe766OYxhsvDDFToPl0mV4CvWWAy0",
+                        clientSecret: "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",
+                        refreshToken: "1//045KJdr5Kii7ICgYIARAAGAQSNwF-L9IriVLCDOvNH5qtEc9S5ViXREzGVtrC9zrTLJW9qBnyGX-AJnw0ty9NiUIvuU_2rJ7yqo8",
                         accessToken: accessToken
                     },
                 });
@@ -223,12 +223,12 @@ exports.forgotPassword = (req, res) => {
 
                 const oauth2Client = new OAuth2(
                     "213207826462-2dpeqbdjt1sfqeb6dkii5fmsemsf5ahs.apps.googleusercontent.com", // ClientID
-                    "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", // Client Secret
+                    "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", // Client Secret
                     "https://developers.google.com/oauthplayground" // Redirect URL
                 );
 
                 oauth2Client.setCredentials({
-                    refresh_token: "1//04zPxZNLF0lgqCgYIARAAGAQSNwF-L9IrS-6DdtaoklQg0FQuLhcYLJjJ6bu8AKl09CizhGRe766OYxhsvDDFToPl0mV4CvWWAy0"
+                    refresh_token: "1//045KJdr5Kii7ICgYIARAAGAQSNwF-L9IriVLCDOvNH5qtEc9S5ViXREzGVtrC9zrTLJW9qBnyGX-AJnw0ty9NiUIvuU_2rJ7yqo8"
                 });
                 const accessToken = oauth2Client.getAccessToken()
 
@@ -255,8 +255,8 @@ exports.forgotPassword = (req, res) => {
                                 type: "OAuth2",
                                 user: "atul.etoos111@gmail.com",
                                 clientId: "213207826462-2dpeqbdjt1sfqeb6dkii5fmsemsf5ahs.apps.googleusercontent.com",
-                                clientSecret: "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",
-                                refreshToken: "1//04zPxZNLF0lgqCgYIARAAGAQSNwF-L9IrS-6DdtaoklQg0FQuLhcYLJjJ6bu8AKl09CizhGRe766OYxhsvDDFToPl0mV4CvWWAy0",
+                                clientSecret: "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",
+                                refreshToken: "1//045KJdr5Kii7ICgYIARAAGAQSNwF-L9IriVLCDOvNH5qtEc9S5ViXREzGVtrC9zrTLJW9qBnyGX-AJnw0ty9NiUIvuU_2rJ7yqo8",
                                 accessToken: accessToken
                         
                             },
