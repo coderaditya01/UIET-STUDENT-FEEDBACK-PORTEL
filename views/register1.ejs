@@ -1,0 +1,65 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center">
+      <h1 class="mb-3">
+        <img src="/assets/secure-icon.png" alt="icon" width="20%" />
+      </h1>
+      <h2>
+        Register New User
+      </h2>
+      <%- include ("./messages") %>
+      <form action="/auth/register" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="name" id="name" name="name" class="form-control" placeholder="Enter Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>" />
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="phoneno">Phone No</label>
+          <input type="phoneno" id="phoneno" name="phoneno" class="form-control" placeholder="Enter Phone No"
+            value="<%= typeof phoneno != 'undefined' ? phoneno : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="course">Course</label>
+          <input type="text" id="phoneno" name="course" class="form-control" placeholder="Enter Phone No"
+            value="<%= typeof course != 'undefined' ? course : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="branch">Branch</label>
+          <input type="text" id="branch" name="branch" class="form-control" placeholder="Enter Phone No"
+            value="<%= typeof branch != 'undefined' ? branch: '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="number" id="year" name="year" class="form-control" min="1" max="5" placeholder="Enter Phone No"
+            value="<%= typeof year != 'undefined' ? year : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="hostal">Hostal/label>
+          <input type="text" id="hostal" name="hostal" class="form-control" min="1" max="5" placeholder="Enter Phone No"
+            value="<%= typeof hostal != 'undefined' ? hostal : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Register
+        </button>
+      </form>
+      <p class="mt-4">Already have an account? <a href="/auth/login">Login</a></p>
+    </div>
+  </div>
+</div>

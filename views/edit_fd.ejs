@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/css/style1.css">
+    <title>U.I.E.T. STUDENT'S FEEDBACK PORTEL</title>
+</head>
+
+<body>
+    <h1>U.I.E.T. STUDENT'S FEEDBACK PORTEL</h1>
+    <div class="contain">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active px-2">
+                  <a class="nav-link adi" href="home">Home</a>
+              </li>
+              <li class="nav-item active px-2">
+                  <a class="nav-link adi" href="/feedback">Submit a feedback</a>
+              </li>
+              <li class="nav-item active px-2">
+                  <a class="nav-link adi" href="/viewfeedback">Student's feedback</a>
+              </li>
+      
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active px-2">
+                <a class="nav-link adi" href="feedb"><i class="fas fa-user-cog">&nbsp &nbsp</i>Admin Panal</a>
+            </li>
+            
+          </div>
+          
+        
+        </nav>
+      </div>
+    
+    <div class="container">
+        <div class="card mx-auto mt-4 shadow rounded">
+            <div class="card-body">
+                <h4 class="card-title font-weight-bold text-center">
+                    <h2 class="text-center">Update / Reply feedback</h2>
+                </h4>
+                <%- include ("./messages") %>
+            <form method="POST">
+                    <div class="new_user">
+                    
+                        <div class="form-group ">
+                            <label for="yourname">Name:</label>
+                            <input type="hidden" name="id" value="<%= feeds._id %>">
+                            
+                        </div>
+                   
+                    
+                        <div class="form-group ">
+                            <label for="course">Course:</label>
+                            <input type="text" name="query" value="<%= feeds.query %>" placeholder="" class="form-control" id="course"
+                                aria-describedby="emailHelp" required minlength="3">
+                        </div>
+                   
+                    
+                        <div class="form-group ">
+                            <label for="hostal">Hostal:</label>
+                            <input type="text" name="feedback" value="<%= feeds.feedback %>" placeholder="" class="form-control" id="hostal"
+                                aria-describedby="emailHelp" required minlength="3">
+                        </div>
+                  
+                    
+                        
+                    
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="btn btn-success w-100 update">Post Feedback</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+   
+<div class="row mt-3 mx-0 px-0">
+    <div class="col-md-12 py-2px text-center bg-dark">
+      <p class="font-italic text-light ">&copy; Copyrights uietfeedbackportel.com All rights reserved.</p>
+    </div>
+  </div>
+  
+    
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    
+
+
+    
+</body>
+
+</html>
