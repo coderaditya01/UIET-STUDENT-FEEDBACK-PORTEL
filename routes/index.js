@@ -268,7 +268,7 @@ router.post('/update_feedback/:id',ensureAuthenticated, function(req, res) {
        
       /* UPDATE User */
       router.post('/update_query/:id',ensureAuthenticated, function(req, res) {
-        Feedb.findByIdAndUpdate(req.params.id, req.body, function (err) {
+        Queryy.findByIdAndUpdate(req.params.id, req.body, function (err) {
           if(err){
             req.flash('error_msg', 'Something went wrong! User could not updated.');
             res.redirect('edit/'+req.params.id);
